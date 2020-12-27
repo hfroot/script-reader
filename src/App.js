@@ -49,6 +49,10 @@ function App() {
     };
   };
 
+  const characters = languageMap[state.lang].text.characters;
+  const altCharacters = languageMap[state.altLang].text.characters;
+  const selectedCharacter = "alice"; // demo
+
   return (
     <div className="App">
       <div className="TextHeader">
@@ -76,10 +80,11 @@ function App() {
               </p>
             );
           } else {
+            const highlighted = t.character === selectedCharacter;
             return (
-              <p key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)}>
-                <span className={state.lang}><b>{t.character}: </b>{t.text}</span>
-                <span className={state.altLang} style={{display:"none"}}><b>{altT.character}: </b>{altT.text}</span>
+              <p key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)} className={highlighted ? "highlighted" : ""}>
+                <span className={state.lang}><b>{characters[t.character].name}: </b>{t.text}</span>
+                <span className={state.altLang} style={{display:"none"}}><b>{altCharacters[altT.character].name}: </b>{altT.text}</span>
               </p>
             );
           }
