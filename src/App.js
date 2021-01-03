@@ -1,21 +1,10 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import FrenchText from './assets/texts/incendies/fr.json'
-import EnglishText from './assets/texts/incendies/en.json'
-
-const languageMap = {
-  "fr": {
-    "display": "français",
-    "text": FrenchText
-  },
-  "en": {
-    "display": "english",
-    "text": EnglishText
-  }
-};
+import {LanguageMap, Text} from './Text.js';
 
 function App() {
+  const text = Text();
   const [state, setState] = useState({
     lang: "fr",
     altLang: "en"
@@ -49,42 +38,44 @@ function App() {
     };
   };
 
-  const characters = languageMap[state.lang].text.characters;
-  const altCharacters = languageMap[state.altLang].text.characters;
+  const characters = text.characters[state.lang];
+  const altCharacters = text.characters[state.altLang];
   const selectedCharacter = "alice"; // demo
 
   return (
     <div className="App">
       <div className="TextHeader">
-        <h1>{languageMap[state.lang].text.title}</h1>
-        <h2>{languageMap[state.lang].text.author}</h2>
+        <h1>{text.title[state.lang]}</h1>
+        <h2>{text.author[state.lang]}</h2>
       </div>
       <div className="Configuration">
-        <button onClick={toggleLanguage}>Change language to: {languageMap[state.altLang].display}</button>
+        <button onClick={toggleLanguage}>Change language to: {LanguageMap[state.altLang].display}</button>
       </div>
-      <div className="TextBody" style={{"white-space": "pre-wrap"}}>
-        {languageMap[state.lang].text.text.map((t, key) => {
-          let altT = languageMap[state.altLang].text.text[key];
+      <div className="TextBody" style={{whiteSpace: "pre-wrap"}}>
+        {text.text.map((t, key) => {
+          const displayText = t.text[state.lang];
+          const altDisplayText = t.text[state.altLang];
           if (t.marker) {
             return (
               <h3 key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)}>
-                <span className={state.lang}>{t.text}</span>
-                <span className={state.altLang} style={{display:"none"}}>{altT.text}</span>
+                <span className={state.lang}>{displayText}</span>
+                <span className={state.altLang} style={{display:"none"}}>{altDisplayText}</span>
               </h3>
             );
           } else if (t.direction) {
             return (
               <p key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)}>
-                <span className={state.lang}><i>{t.text}</i></span>
-                <span className={state.altLang} style={{display:"none"}}><i>{altT.text}</i></span>
+                <span className={state.lang}><i>{displayText}</i></span>
+                <span className={state.altLang} style={{display:"none"}}><i>{altDisplayText}</i></span>
               </p>
             );
           } else {
             const highlighted = t.character === selectedCharacter;
+            console.log(t.character);
             return (
               <p key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)} className={highlighted ? "highlighted" : ""}>
-                <span className={state.lang}><b>{characters[t.character].name}: </b>{t.text}</span>
-                <span className={state.altLang} style={{display:"none"}}><b>{altCharacters[altT.character].name}: </b>{altT.text}</span>
+                <span className={state.lang}><b>{characters[t.character].name}: </b>{displayText}</span>
+                <span className={state.altLang} style={{display:"none"}}><b>{altCharacters[t.character].name}: </b>{altDisplayText}</span>
               </p>
             );
           }
