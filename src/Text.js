@@ -27,6 +27,10 @@ function Text() {
     } else if(key === 'text') {
       combinedText[key] = [];
       FrenchText[key].forEach((line, idx) => {
+        if(idx > EnglishText.text.length - 1) {
+          // if this happens with real text should throw an error, texts aren't aligned
+          return;
+        }
         let translatedLine = {
           'character': line.character,
           'direction': line.direction,

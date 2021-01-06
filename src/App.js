@@ -40,7 +40,8 @@ function App() {
 
   const characters = text.characters[state.lang];
   const altCharacters = text.characters[state.altLang];
-  const selectedCharacter = "alice"; // demo
+  const selectedCharacter = "S"; // demo
+  let lastCharacter;
 
   return (
     <div className="App">
@@ -56,6 +57,7 @@ function App() {
           const displayText = t.text[state.lang];
           const altDisplayText = t.text[state.altLang];
           if (t.marker) {
+            lastCharacter = null;
             return (
               <h3 key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)}>
                 <span className={state.lang}>{displayText}</span>
@@ -70,12 +72,13 @@ function App() {
               </p>
             );
           } else {
+            const sameCharacter = lastCharacter === t.character;
+            lastCharacter = t.character;
             const highlighted = t.character === selectedCharacter;
-            console.log(t.character);
             return (
               <p key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)} className={highlighted ? "highlighted" : ""}>
-                <span className={state.lang}><b>{characters[t.character].name}: </b>{displayText}</span>
-                <span className={state.altLang} style={{display:"none"}}><b>{altCharacters[t.character].name}: </b>{altDisplayText}</span>
+                <span className={state.lang}><b className={sameCharacter ? "same-character" : null}>{characters[t.character].name}: </b>{displayText}</span>
+                <span className={state.altLang} style={{display:"none"}}><b className={sameCharacter ? "same-character" : null}>{altCharacters[t.character].name}: </b>{altDisplayText}</span>
               </p>
             );
           }
