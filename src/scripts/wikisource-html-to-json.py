@@ -59,13 +59,10 @@ def main():
   current_character = ""
   for element in originalTextHtml:
     if element.name == "h3":
-      if not len(output['text']):
-        output['text'].append({
-          'marker': True,
-          'text': element.get_text()
-        })
-      else:
-        break
+      output['text'].append({
+        'marker': True,
+        'text': element.get_text()
+      })
     elif element.name == "h4":
       add_marker(output, element)
     elif isinstance(element, Tag) and 'class' in element.attrs:
