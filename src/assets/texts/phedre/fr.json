@@ -1,0 +1,333 @@
+{
+  "title": "Phedre",
+  "author": "Jean Baptiste Racine",
+  "language": "fr",
+  "characters": {
+    "N": {
+      "name": " Nawal",
+      "nickname": "N"
+    },
+    "J": {
+      "name": " Jeanne",
+      "nickname": "J"
+    },
+    "S": {
+      "name": " Simon",
+      "nickname": "S"
+    },
+    "H": {
+      "name": " Hermile Lebel",
+      "nickname": "H"
+    }
+  },
+  "text": [
+    {
+      "marker": true,
+      "text": "ACTE PREMIER."
+    },
+    {
+      "marker": true,
+      "text": "Scène première."
+    },
+    {
+      "character": "HIPPOLYTE",
+      "text": "\nLe dessein en est pris : je pars, cher Théramène,\nEt quitte le séjour de l’aimable Trézène.\nDans le doute mortel dont je suis agité,\nJe commence à rougir de mon oisiveté.\nDepuis plus de six mois éloigné de mon père,\nJ’ignore le destin d’une tête si chère ;\nJ’ignore jusqu’aux lieux qui le peuvent cacher.\n\n"
+    },
+    {
+      "character": "THÉRAMÈNE",
+      "text": "\nEt dans quels lieux, seigneur, l’allez-vous donc chercher ?\nDéjà pour satisfaire à votre juste crainte,\nJ’ai couru les deux mers que sépare Corinthe ;\nJ’ai demandé Thésée aux peuples de ces bords\nOù l’on voit l’Achéron se perdre chez les morts ;\nJ’ai visité l’Élide, et laissant le Ténare,\nPassé jusqu’à la mer qui vit tomber Icare :\nSur quel espoir nouveau, dans quels heureux climats\nCroyez-vous découvrir la trace de ses pas ?\nQui sait même, qui sait si le roi votre père\nVeut que de son absence on sache le mystère ?\nEt si, lorsqu’avec vous nous tremblons pour ses jours,\nTranquille, et nous cachant de nouvelles amours,\nCe héros n’attend point qu’une amante abusée…\n\n"
+    },
+    {
+      "character": "HIPPOLYTE",
+      "text": "\nCher Théramène, arrête, et respecte Thésée.\nDe ses jeunes erreurs désormais revenu,\nPar un indigne obstacle il n’est point retenu ;\nEt fixant de ses vœux l’inconstance fatale,\nPhèdre depuis longtemps ne craint plus de rivale.\nEnfin, en le cherchant, je suivrai mon devoir,\nEt je fuirai ces lieux, que je n’ose plus voir.\n\n"
+    },
+    {
+      "character": "THÉRAMÈNE",
+      "text": "\nEh ! depuis quand, seigneur, craignez-vous la présence\nDe ces paisibles lieux si chers à votre enfance,\nEt dont je vous ai vu préférer le séjour\nAu tumulte pompeux d’Athène et de la cour ?\nQuel péril, ou plutôt quel chagrin vous en chasse ?\n\n"
+    },
+    {
+      "character": "HIPPOLYTE",
+      "text": "\nCet heureux temps n’est plus. Tout a changé de face,\nDepuis que sur ces bords les dieux ont envoyé\nLa fille de Minos et de Pasiphaé.\n\n"
+    },
+    {
+      "character": "THÉRAMÈNE",
+      "text": "\nJ’entends : de vos douleurs la cause m’est connue.\nPhèdre ici vous chagrine, et blesse votre vue.\nDangereuse marâtre, à peine elle vous vit,\nQue votre exil d’abord signala son crédit.\nMais sa haine, sur vous autrefois attachée,\nOu s’est évanouie, ou s’est bien relâchée.\nEt d’ailleurs quels périls vous peut faire courir\nUne femme mourante, et qui cherche à mourir ?\nPhèdre, atteinte d’un mal qu’elle s’obstine à taire,\nLasse enfin d’elle-même et du jour qui l’éclaire,\nPeut-elle contre vous former quelques desseins ?\n\n"
+    },
+    {
+      "character": "HIPPOLYTE",
+      "text": "\nSa vaine inimitié n’est pas ce que je crains.\nHippolyte en partant fuit une autre ennemie ;\nJe fuis, je l’avouerai, cette jeune Aricie,\nReste d’un sang fatal conjuré contre nous.\n\n"
+    },
+    {
+      "character": "THÉRAMÈNE",
+      "text": "\nQuoi ! vous-même, seigneur, la persécutez-vous ?\nJamais l’aimable sœur des cruels Pallantides\nTrempa-t-elle aux complots de ses frères perfides ?\nEt devez-vous haïr ses innocents appas ?\n\n"
+    },
+    {
+      "character": "HIPPOLYTE",
+      "text": "\nSi je la haïssais, je ne la fuirais pas.\n\n"
+    },
+    {
+      "character": "THÉRAMÈNE",
+      "text": "\nSeigneur, m’est-il permis d’expliquer votre fuite ?\nPourriez-vous n’être plus ce superbe Hippolyte\nImplacable ennemi des amoureuses lois,\nEt d’un joug que Thésée a subi tant de fois ?\nVénus, par votre orgueil si longtemps méprisée,\nVoudrait-elle à la fin justifier Thésée ?\nEt vous mettant au rang du reste des mortels,\n\n"
+    },
+    {
+      "character": "THÉRAMÈNE",
+      "text": "\nVous a-t-elle forcé d’encenser ses autels ?\nAimeriez-vous, seigneur ?\n\n"
+    },
+    {
+      "character": "HIPPOLYTE",
+      "text": "\nAimeriez-vous, seigneur ? Ami, qu’oses-tu dire ?\nToi qui connais mon cœur depuis que je respire,\nDes sentiments d’un cœur si fier, si dédaigneux,\nPeux-tu me demander le désaveu honteux ?\nC’est peu qu’avec son lait une mère amazone\nM’a fait sucer encor cet orgueil qui t’étonne ;\nDans un âge plus mûr moi-même parvenu,\nJe me suis applaudi quand je me suis connu.\nAttaché près de moi par un zèle sincère,\nTu me contais alors l’histoire de mon père.\nTu sais combien mon âme, attentive à ta voix,\nS’échauffait aux récits de ses nobles exploits,\nQuand tu me dépeignais ce héros intrépide\nConsolant les mortels de l’absence d’Alcide,\nLes monstres étouffés, et les brigands punis,\nProcruste, Cercyon, et Sciron, et Sinis,\nEt les os dispersés du géant d’Épidaure,\nEt la Crète fumant du sang du Minotaure.\nMais quand tu récitais des faits moins glorieux,\nSa foi partout offerte, et reçue en cent lieux ;\nHélène à ses parents dans Sparte dérobée ;\nSalamine témoin des pleurs de Péribée ;\nTant d’autres, dont les noms lui sont même échappés,\nTrop crédules esprits que sa flamme a trompés !\nAriane aux rochers contant ses injustices ;\nPhèdre enlevée enfin sous de meilleurs auspices ;\nTu sais comme, à regret écoutant ce discours,\nJe te pressais souvent d’en abréger le cours.\nHeureux si j’avais pu ravir à la mémoire\nCette indigne moitié d’une si belle histoire !\nEt moi-même, à mon tour, je me verrais lié !\nEt les dieux jusque-là m’auraient humilié !\nDans mes lâches soupirs d’autant plus méprisable,\nQu’un long amas d’honneurs rend Thésée excusable,\nQu’aucuns monstres par moi domptés jusqu’aujourd’hui,\nNe m’ont acquis le droit de faillir comme lui !\nQuand même ma fierté pourrait s’être adoucie,\nAurais-je pour vainqueur dû choisir Aricie ?\nNe souviendrait-il plus à mes sens égarés\nDe l’obstacle éternel qui nous a séparés ?\nMon père la réprouve, et par des lois sévères,\nIl défend de donner des neveux à ses frères :\nD’une tige coupable il craint un rejeton ;\nIl veut avec la sœur ensevelir leur nom ;\nEt que, jusqu’au tombeau soumise à sa tutelle,\nJamais les feux d’hymen ne s’allument pour elle.\nDois-je épouser ses droits contre un père irrité ?\nDonnerai-je l’exemple à la témérité ?\nEt dans un fol amour ma jeunesse embarquée…\n\n"
+    },
+    {
+      "character": "THÉRAMÈNE",
+      "text": "\nAh, seigneur ! si votre heure est une fois marquée,\nLe ciel de nos raisons ne sait point s’informer.\nThésée ouvre vos yeux en voulant les fermer ;\nEt sa haine irritant une flamme rebelle,\nPrête à son ennemie une grâce nouvelle.\nEnfin d’un chaste amour pourquoi vous effrayer ?\nS’il a quelque douceur, n’osez-vous l’essayer ?\nEn croirez-vous toujours un farouche scrupule ?\nCraint-on de s’égarer sur les traces d’Hercule ?\nQuels courages Vénus n’a-t-elle pas domptés ?\nVous-même, où seriez-vous, vous qui la combattez,\nSi toujours Antiope à ses lois opposée\nD’une pudique ardeur n’eût brûlé pour Thésée ?\nMais que sert d’affecter un superbe discours ?\nAvouez-le, tout change ; et depuis quelques jours,\nOn vous voit moins souvent, orgueilleux et sauvage,\nTantôt faire voler un char sur le rivage,\nTantôt, savant dans l’art par Neptune inventé,\nRendre docile au frein un coursier indompté ;\nLes forêts de nos cris moins souvent retentissent ;\nChargés d’un feu secret, vos yeux s’appesantissent ;\nIl n’en faut point douter, vous aimez, vous brûlez ;\nVous périssez d’un mal que vous dissimulez :\nLa charmante Aricie a-t-elle su vous plaire ?\n\n"
+    },
+    {
+      "character": "HIPPOLYTE",
+      "text": "\nThéramène, je pars, et vais chercher mon père.\n\n"
+    },
+    {
+      "character": "THÉRAMÈNE",
+      "text": "\nNe verrez-vous point Phèdre avant que de partir,\nSeigneur ?\n\n"
+    },
+    {
+      "character": "HIPPOLYTE",
+      "text": "\nSeigneur ? C’est mon dessein : tu peux l’en avertir.\nVoyons-la, puisque ainsi mon devoir me l’ordonne.\nMais quel nouveau malheur trouble sa chère Œnone ?\n\n"
+    },
+    {
+      "marker": true,
+      "text": "Scène II."
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nHélas ! seigneur, quel trouble au mien peut être égal ?\nLa reine touche presque à son terme fatal.\nEn vain à l’observer jour et nuit je m’attache ;\nElle meurt dans mes bras d’un mal qu’elle me cache.\nUn désordre éternel règne dans son esprit ;\nSon chagrin inquiet l’arrache de son lit :\nElle veut voir le jour : et sa douleur profonde\nM’ordonne toutefois d’écarter tout le monde…\nElle vient.\n\n"
+    },
+    {
+      "character": "HIPPOLYTE",
+      "text": "\nElle vient. Il suffit : je la laisse en ces lieux,\nEt ne lui montre point un visage odieux.\n\n"
+    },
+    {
+      "marker": true,
+      "text": "Scène III."
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nN’allons point plus avant, demeurons, chère Œnone.\nJe ne me soutiens plus ; ma force m’abandonne :\nMes yeux sont éblouis du jour que je revoi,\nEt mes genoux tremblants se dérobent sous moi.\nHélas !\n(Elle s’assied.)\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nHélas ! Dieux tout-puissants, que nos pleurs vous apaisent !\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nQue ces vains ornements, que ces voiles me pèsent !\nQuelle importune main, en formant tous ces nœuds,\nA pris soin sur mon front d’assembler mes cheveux ?\nTout m’afflige, me nuit, et conspire à me nuire.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nComme on voit tous ses vœux l’un l’autre se détruire !\nVous-même, condamnant vos injustes desseins,\nTantôt à vous parer vous excitiez nos mains ;\nVous-même, rappelant votre force première,\nVous vouliez vous montrer et revoir la lumière.\nVous la voyez, madame ; et, prête à vous cacher,\nVous haïssez le jour que vous veniez chercher !\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nNoble et brillant auteur d’une triste famille,\nToi dont ma mère osait se vanter d’être fille,\nQui peut-être rougis du trouble où tu me vois,\nSoleil, je te viens voir pour la dernière fois !\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nQuoi ! vous ne perdrez point cette cruelle envie ?\nVous verrai-je toujours, renonçant à la vie,\nFaire de votre mort les funestes apprêts ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nDieux ! que ne suis-je assise à l’ombre des forêts !\nQuand pourrai-je, au travers d’une noble poussière,\nSuivre de l’œil un char fuyant dans la carrière ?\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nQuoi, madame ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nQuoi, madame ? Insensée ! où suis-je ? et qu’ai-je dit ?\nOù laissé-je égarer mes vœux et mon esprit ?\nJe l’ai perdu : les dieux m’en ont ravi l’usage.\nŒnone, la rougeur me couvre le visage :\nJe te laisse trop voir mes honteuses douleurs ;\nEt mes yeux malgré moi se remplissent de pleurs.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nAh ! s’il vous faut rougir, rougissez d’un silence\nQui de vos maux encore aigrit la violence.\nRebelle à tous nos soins, sourde à tous nos discours,\nVoulez-vous, sans pitié, laisser finir vos jours ?\nQuelle fureur les borne au milieu de leur course ?\nQuel charme ou quel poison en a tari la source ?\nLes ombres par trois fois ont obscurci les cieux\nDepuis que le sommeil n’est entré dans vos yeux ;\nEt le jour a trois fois chassé la nuit obscure\nDepuis que votre corps languit sans nourriture.\nÀ quel affreux dessein vous laissez-vous tenter ?\nDe quel droit sur vous-même osez-vous attenter ?\nVous offensez les dieux auteurs de votre vie ;\nVous trahissez l’époux à qui la foi vous lie ;\nVous trahissez enfin vos enfants malheureux,\nQue vous précipitez sous un joug rigoureux.\nSongez qu’un même jour leur ravira leur mère\nEt rendra l’espérance au fils de l’étrangère,\nÀ ce fier ennemi de vous, de votre sang,\nCe fils qu’une Amazone a porté dans son flanc,\nCet Hippolyte…\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nCet Hippolyte… Ah ! dieux !\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nCet Hippolyte… Ah ! dieux ! Ce reproche vous touche ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nMalheureuse ! quel nom est sorti de ta bouche !\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nEh bien ! votre colère éclate avec raison :\nJ’aime à vous voir frémir à ce funeste nom.\nVivez donc : que l’amour, le devoir vous excite.\nVivez ; ne souffrez pas que le fils d’une Scythe\nAccablant vos enfants d’un empire odieux,\nCommande au plus beau sang de la Grèce et des dieux.\nMais ne différez point ; chaque moment vous tue :\nRéparez promptement votre force abattue,\nTandis que de vos jours prêts à se consumer\nLe flambeau dure encore et peut se rallumer.\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nJ’en ai trop prolongé la coupable durée.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nQuoi ! de quelques remords êtes-vous déchirée ?\nQuel crime a pu produire un trouble si pressant ?\nVos mains n’ont point trempé dans le sang innocent ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nGrâces au ciel, mes mains ne sont point criminelles.\nPlût aux dieux que mon cœur fût innocent comme elles !\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nEt quel affreux projet avez-vous enfanté\nDont votre cœur encor doive être épouvanté ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nJe t’en ai dit assez : épargne-moi le reste.\nJe meurs, pour ne point faire un aveu si funeste.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nMourez donc, et gardez un silence inhumain ;\nMais pour fermer vos yeux cherchez une autre main.\nQuoiqu’il vous reste à peine une faible lumière,\nMon âme chez les morts descendra la première ;\nMille chemins ouverts y conduisent toujours,\nEt ma juste douleur choisira les plus courts.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nCruelle ! quand ma foi vous a-t-elle déçue ?\nSongez-vous qu’en naissant mes bras vous ont reçue ?\nMon pays, mes enfants, pour vous j’ai tout quitté.\nRéserviez-vous ce prix à ma fidélité ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nQuel fruit espères-tu de tant de violence ?\nTu frémiras d’horreur si je romps le silence.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nEt que me direz-vous qui ne cède, grands dieux !\nÀ l’horreur de vous voir expirer à mes yeux ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nQuand tu sauras mon crime et le sort qui m’accable,\nJe n’en mourrai pas moins : j’en mourrai plus coupable.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nMadame, au nom des pleurs que pour vous j’ai versés,\nPar vos faibles genoux que je tiens embrassés,\nDélivrez mon esprit de ce funeste doute.\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nTu le veux ? lève-toi.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nTu le veux ? lève-toi. Parlez : je vous écoute.\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nCiel ! que lui vais-je dire ? et par où commencer ?\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nPar de vaines frayeurs cessez de m’offenser.\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nÔ haine de Vénus ! ô fatale colère !\nDans quels égarements l’amour jeta ma mère !\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nOublions-les, madame ; et qu’à tout l’avenir\nUn silence éternel cache ce souvenir.\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nAriane, ma sœur ! de quel amour blessée\nVous mourûtes aux bords où vous fûtes laissée !\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nQue faites-vous, madame ? et quel mortel ennui\nContre tout votre sang vous anime aujourd’hui ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nPuisque Vénus le veut, de ce sang déplorable\nJe péris la dernière et la plus misérable.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nAimez-vous ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nAimez-vous ? De l’amour j’ai toutes les fureurs.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nPour qui ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nPour qui ? Tu vas ouïr le comble des horreurs…\nJ’aime… À ce nom fatal, je tremble, je frissonne.\nJ’aime…\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nJ’aime… Qui ?\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nJ’aime… Qui ? Tu connais ce fils de l’Amazone,\nCe prince si longtemps par moi-même opprimé…\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nHippolyte ? Grands dieux !\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nHippolyte ? Grands dieux ! C’est toi qui l’as nommé !\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nJuste ciel ! tout mon sang dans mes veines se glace !\nÔ désespoir ! ô crime ! ô déplorable race !\nVoyage infortuné ! Rivage malheureux,\nFallait-il approcher de tes bords dangereux !\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nMon mal vient de plus loin. À peine au fils d’Égée\nSous les lois de l’hymen je m’étais engagée,\nMon repos, mon bonheur semblait être affermi ;\nAthènes me montra mon superbe ennemi :\nJe le vis, je rougis, je pâlis à sa vue ;\nUn trouble s’éleva dans mon âme éperdue ;\nMes yeux ne voyaient plus, je ne pouvais parler ;\nJe sentis tout mon corps et transir et brûler :\nJe reconnus Vénus et ses feux redoutables,\nD’un sang qu’elle poursuit tourments inévitables !\nPar des vœux assidus je crus les détourner :\nJe lui bâtis un temple, et pris soin de l’orner ;\nDe victimes moi-même à toute heure entourée,\nJe cherchais dans leurs flancs ma raison égarée :\nD’un incurable amour remèdes impuissants !\nEn vain sur les autels ma main brûlait l’encens !\nQuand ma bouche implorait le nom de la déesse,\nJ’adorais Hippolyte ; et, le voyant sans cesse,\nMême au pied des autels que je faisais fumer,\nJ’offrais tout à ce dieu que je n’osais nommer.\nJe l’évitais partout. Ô comble de misère !\nMes yeux le retrouvaient dans les traits de son père.\nContre moi-même enfin j’osai me révolter :\nJ’excitai mon courage à le persécuter.\nPour bannir l’ennemi dont j’étais idolâtre,\nJ’affectai les chagrins d’une injuste marâtre ;\nJe pressai son exil ; et mes cris éternels\nL’arrachèrent du sein et des bras paternels.\nJe respirais, Œnone ; et, depuis son absence,\nMes jours moins agités coulaient dans l’innocence :\nSoumise à mon époux, et cachant mes ennuis,\nDe son fatal hymen je cultivais les fruits.\nVaines précautions ! Cruelle destinée !\nPar mon époux lui-même à Trézène amenée,\nJ’ai revu l’ennemi que j’avais éloigné :\nMa blessure trop vive aussitôt a saigné.\nCe n’est plus une ardeur dans mes veines cachée :\nC’est Vénus tout entière à sa proie attachée.\nJ’ai conçu pour mon crime une juste terreur ;\nJ’ai pris la vie en haine, et ma flamme en horreur ;\nJe voulais en mourant prendre soin de ma gloire,\nEt dérober au jour une flamme si noire :\nJe n’ai pu soutenir tes larmes, tes combats ;\nJe t’ai tout avoué ; je ne m’en repens pas.\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nPourvu que, de ma mort respectant les approches,\nTu ne m’affliges plus par d’injustes reproches,\nEt que tes vains secours cessent de rappeler\nUn reste de chaleur tout prêt à s’exhaler.\n\n"
+    },
+    {
+      "marker": true,
+      "text": "Scène IV."
+    },
+    {
+      "character": "PANOPE",
+      "text": "\nJe voudrais vous cacher une triste nouvelle,\nMadame : mais il faut que je vous la révèle.\nLa mort vous a ravi votre invincible époux ;\nEt ce malheur n’est plus ignoré que de vous.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nPanope, que dis-tu ?\n\n"
+    },
+    {
+      "character": "PANOPE",
+      "text": "\nPanope, que dis-tu ? Que la reine abusée\nEn vain demande au ciel le retour de Thésée ;\nEt que, par des vaisseaux arrivés dans le port,\nHippolyte son fils vient d’apprendre sa mort.\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nCiel !\n\n"
+    },
+    {
+      "character": "PANOPE",
+      "text": "\nCiel ! Pour le choix d’un maître Athènes se partage :\nAu prince votre fils l’un donne son suffrage,\nMadame ; et de l’État, l’autre oubliant les lois\nAu fils de l’étrangère ose donner sa voix.\nOn dit même qu’au trône une brigue insolente\nVeut placer Aricie et le sang de Pallante.\nJ’ai cru de ce péril vous devoir avertir.\nDéjà même Hippolyte est tout prêt à partir ;\nEt l’on craint, s’il paraît dans ce nouvel orage,\nQu’il n’entraîne après lui tout un peuple volage.\n\n"
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nPanope, c’est assez : la reine qui t’entend\nNe négligera point cet avis important.\nScène V.\nPhèdre, Œnone.\n"
+    },
+    {
+      "marker": true,
+      "text": "Scène V."
+    },
+    {
+      "character": "ŒNONE",
+      "text": "\nMadame, je cessais de vous presser de vivre ;\nDéjà même au tombeau je songeais à vous suivre ;\nPour vous en détourner je n’avais plus de voix :\nMais ce nouveau malheur vous prescrit d’autres lois.\nVotre fortune change et prend une autre face :\nLe roi n’est plus, madame ; il faut prendre sa place.\nSa mort vous laisse un fils à qui vous vous devez ;\nEsclave s’il vous perd, et roi si vous vivez.\nSur qui, dans son malheur, voulez-vous qu’il s’appuie ?\nSes larmes n’auront plus de main qui les essuie ;\nEt ses cris innocents, portés jusques aux dieux,\nIront contre sa mère irriter ses aïeux.\nVivez ; vous n’avez plus de reproche à vous faire :\nVotre flamme devient une flamme ordinaire ;\nThésée en expirant vient de rompre les nœuds\nQui faisaient tout le crime et l’horreur de vos feux.\nHippolyte pour vous devient moins redoutable ;\nEt vous pouvez le voir sans vous rendre coupable.\nPeut-être, convaincu de votre aversion,\nIl va donner un chef à la sédition :\nDétrompez son erreur, fléchissez son courage.\nRoi de ces bords heureux, Trézène est son partage ;\nMais il sait que les lois donnent à votre fils\nLes superbes remparts que Minerve a bâtis.\nVous avez l’un et l’autre une juste ennemie :\nUnissez-vous tous deux pour combattre Aricie.\n\n"
+    },
+    {
+      "character": "PHÈDRE",
+      "text": "\nEh bien ! à tes conseils je me laisse entraîner.\nVivons, si vers la vie on peut me ramener,\nEt si l’amour d’un fils, en ce moment funeste,\nDe mes faibles esprits peut ranimer le reste.\n\n\nACTE  second.\n\n\nScène première.\nAricie, Ismène.\n"
+    }
+  ]
+}

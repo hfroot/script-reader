@@ -7,7 +7,7 @@ function App() {
   const text = Text();
   const [state, setState] = useState({
     lang: "fr",
-    altLang: "en"
+    altLang: "fr" //"en"
   });
   let toggleLanguage = function() {
     setState({
@@ -43,6 +43,15 @@ function App() {
   const selectedCharacter = "S"; // demo
   let lastCharacter;
 
+  function getCharacterName(charId, useAlt) {
+    let hasMoreInfo = !!characters[charId];
+    if(hasMoreInfo) {
+      return useAlt ? altCharacters[charId].name : characters[charId].name;
+    } else {
+      return charId;
+    }
+  }
+
   return (
     <div className="App">
       <div className="TextHeader">
@@ -77,8 +86,8 @@ function App() {
             const highlighted = t.character === selectedCharacter;
             return (
               <p key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)} className={highlighted ? "highlighted" : ""}>
-                <span className={state.lang}><b className={sameCharacter ? "same-character" : null}>{characters[t.character].name}: </b>{displayText}</span>
-                <span className={state.altLang} style={{display:"none"}}><b className={sameCharacter ? "same-character" : null}>{altCharacters[t.character].name}: </b>{altDisplayText}</span>
+                <span className={state.lang}><b className={sameCharacter ? "same-character" : null}>{getCharacterName(t.character)}: </b>{displayText}</span>
+                <span className={state.altLang} style={{display:"none"}}><b className={sameCharacter ? "same-character" : null}>{getCharacterName(t.character, true)}: </b>{altDisplayText}</span>
               </p>
             );
           }
