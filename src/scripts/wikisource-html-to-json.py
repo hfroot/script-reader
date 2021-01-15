@@ -35,28 +35,11 @@ def main():
     "title": "Phedre",
     "author": "Jean Baptiste Racine",
     "language": "fr",
-    "characters": {
-      "N": {
-        "name": " Nawal",
-        "nickname": "N"
-      },
-      "J": {
-        "name": " Jeanne",
-        "nickname": "J"
-      },
-      "S": {
-        "name": " Simon",
-        "nickname": "S"
-      },
-      "H": {
-        "name": " Hermile Lebel",
-        "nickname": "H"
-      }
-    },
+    "characters": {},
     'text': []
   }
   originalTextHtml = soup.find(class_="prp-pages-output").descendants
-  current_character = ""
+  current_character_id = ""
   for element in originalTextHtml:
     if element.name == "h3":
       output['text'].append({
@@ -67,12 +50,18 @@ def main():
       add_marker(output, element)
     elif isinstance(element, Tag) and 'class' in element.attrs:
       if 'personnage' in element['class']:
-        current_character = element.get_text().strip('.')
+        character_name = element.get_text().strip('.')
+        current_character_id = character_name.lower()
+        if current_character_id not in output['characters']:
+          output['characters'][current_character_id] = {
+            "name": character_name
+          }
       elif 'poem' in element['class']:
         output['text'].append({
-          "character": current_character,
+          "character": current_character_id,
           "text": element.get_text()
         })
+  
   with open(textsPath / 'phedre/fr.json', 'w', encoding='utf8') as outfile:
     json.dump(output, outfile, indent=2, ensure_ascii=False)
 
