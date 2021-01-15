@@ -46,7 +46,7 @@ def write_to_file(filename, output):
 # Better: figure out how to save the indentation (again, a formatting thing of verse plays)
 def wiki_parse():
   soup = get_soup("phedre/Phèdre (Racine), Didot, 1854 - Wikisource.html")
-  output = new_output("Phedre", "Jean Baptiste Racine", "fr")
+  output = new_output("Phèdre", "Jean Baptiste Racine", "fr")
   originalTextHtml = soup.find(class_="prp-pages-output").descendants
 
   current_character_id = ""
