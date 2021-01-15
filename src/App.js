@@ -7,7 +7,7 @@ function App() {
   const text = Text();
   const [state, setState] = useState({
     lang: "fr",
-    altLang: "fr" //"en"
+    altLang: "en"
   });
   let toggleLanguage = function() {
     setState({

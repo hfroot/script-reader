@@ -1,6 +1,5 @@
 import FrenchText from './assets/texts/phedre/fr.json'
-// import EnglishText from './assets/texts/incendies/en.json'
-const EnglishText = FrenchText
+import EnglishText from './assets/texts/phedre/en.json'
 
 const LanguageMap = {
   "fr": {
