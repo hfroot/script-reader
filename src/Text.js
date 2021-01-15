@@ -26,10 +26,16 @@ function Text() {
       }
     } else if(key === 'text') {
       combinedText[key] = [];
+      let mismatchWarningRaised = false;
       FrenchText[key].forEach((line, idx) => {
         if(idx > EnglishText.text.length - 1) {
-          // if this happens with real text should throw an error, texts aren't aligned
+          // texts aren't aligned, indicating a fault in the translation. Debug using warnings in the console.
           return;
+        }
+        const englishLine = EnglishText.text[idx];
+        if(!mismatchWarningRaised && (line.character !== englishLine.character || line.direction !== englishLine.direction || line.marker !== englishLine.marker)) {
+          console.warn("Texts are out of sync from the following line pair: ", line, englishLine);
+          mismatchWarningRaised = true;
         }
         let translatedLine = {
           'character': line.character,
@@ -37,7 +43,7 @@ function Text() {
           'marker': line.marker,
           'text': {
             'fr': line.text,
-            'en': EnglishText.text[idx].text
+            'en': englishLine.text
           }
         };
         combinedText[key].push(translatedLine);

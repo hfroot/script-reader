@@ -42,11 +42,13 @@ def write_to_file(filename, output):
   with open(TEXTS_PATH / filename, 'w', encoding='utf8') as outfile:
     json.dump(output, outfile, indent=2, ensure_ascii=False)
 
+# TODO: ignore bits of text that isn't displayed
+# Better: figure out how to save the indentation (again, a formatting thing of verse plays)
 def wiki_parse():
   soup = get_soup("phedre/Phèdre (Racine), Didot, 1854 - Wikisource.html")
   output = new_output("Phedre", "Jean Baptiste Racine", "fr")
   originalTextHtml = soup.find(class_="prp-pages-output").descendants
-  
+
   current_character_id = ""
   for element in originalTextHtml:
     if element.name == "h3":
@@ -62,10 +64,16 @@ def wiki_parse():
             "name": character_name
           }
       elif 'poem' in element['class']:
-        output['text'].append({
-          "character": current_character_id,
-          "text": element.get_text()
-        })
+        # this is necessary because page breaks cause new "poem verse" divs (see span class="pagenum ws-pagenum")
+        # TODO: would be better to strip multiple \ns too
+        if len(output['text']) and 'character' in output['text'][-1] and current_character_id == output['text'][-1]['character']:
+          output['text'][-1]['text'] += element.get_text()
+        else:
+          output['text'].append({
+            "character": current_character_id,
+            "text": element.get_text()
+          })
+
   write_to_file('phedre/fr.json', output)
 
 def character_mapping(en_id):
@@ -96,7 +104,7 @@ def gutenberg_parse():
     if element.name == "h2":
       add_marker(output, element)
     elif element.name == "pre":
-      scene_match = re.search(r"(SCENE [IVX]+)", str(element.string))
+      scene_match = re.search(r"((?:SCENE|Scene) [IVX]+)", str(element.string))
       if scene_match:
         output['text'].append({
           'marker': True,
@@ -112,14 +120,14 @@ def gutenberg_parse():
           # NB: this required editing the license info in the original text to be in a footer tag to be skipped
           for speech_match in re.finditer(r"(([A-Z]{2,})((?:\n\s*'?[a-zA-Z][^A-Z].+)+))", str(element.string)):
             character_name = speech_match.group(2).strip()
-            character_id = character_name.lower()
+            character_id = character_mapping(character_name.lower())
             output['text'].append({
               'character': character_id,
               # prefixed with newline to follow formatting practices for verse plays
               'text': format_speech_body(speech_match.group(3))
             })
             if character_id not in output['characters']:
-              output['characters'][character_mapping(character_id)] = {
+              output['characters'][character_id] = {
                 'name': character_name
               }
 
