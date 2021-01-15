@@ -23,7 +23,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Texts
 /src/assets/texts/incendies
+/src/assets/texts/phedre/*.json
 
 .eslintcache
 .vscode/

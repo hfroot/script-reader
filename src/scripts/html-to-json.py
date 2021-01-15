@@ -82,6 +82,11 @@ def character_mapping(en_id):
     "work": "work"
   }[en_id]
 
+def format_speech_body(string):
+  minimised_spaces = re.sub(r' +', ' ', string.strip())
+  no_leading_space = re.sub(r'\n ', '\n', minimised_spaces)
+  return '\n' + no_leading_space
+
 def gutenberg_parse():
   soup = get_soup("phedre/Phaedra, by Jean Baptiste Racine.htm")
   output = new_output("Phaedra", "Jean Baptiste Racine", "en")
@@ -110,7 +115,8 @@ def gutenberg_parse():
             character_id = character_name.lower()
             output['text'].append({
               'character': character_id,
-              'text': speech_match.group(3).strip()
+              # prefixed with newline to follow formatting practices for verse plays
+              'text': format_speech_body(speech_match.group(3))
             })
             if character_id not in output['characters']:
               output['characters'][character_mapping(character_id)] = {
@@ -119,5 +125,5 @@ def gutenberg_parse():
 
   write_to_file('phedre/en.json', output)
 
-# wiki_parse()
+wiki_parse()
 gutenberg_parse()
