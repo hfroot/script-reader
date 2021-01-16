@@ -1,6 +1,27 @@
 #App {
-  padding: 2em 5em;
+  padding: 3em 5em;
   width: 60%;
+}
+
+h1, h2 {
+  color: var(--heading-color);
+}
+
+#Configuration > button {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 0.5em 3em;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#Configuration > button:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
 }
 
 #TextBody p.highlighted {

@@ -1,5 +1,5 @@
 footer {
-  background-color: #fff;
+  background-color: var(--bg-color);
   border-top: 2px solid #333;
   font-size: 15px;
   height: 3em;

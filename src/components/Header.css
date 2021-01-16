@@ -1,11 +1,11 @@
 header {
-  background-color: #fff;
+  background-color: var(--bg-color);
   border-bottom: 2px solid #333;
   font-size: 15px;
-  height: 2em;
-  padding: 0 2em;
+  padding: 0.5em 2em;
   width: 100%;
   position: fixed;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
