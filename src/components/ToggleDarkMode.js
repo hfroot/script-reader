@@ -3,19 +3,16 @@ import './ToggleDarkMode.css';
 
 function ToggleDarkMode() {
   function switchTheme(e) {
-    if (e.target.checked) {
+    if (!e.target.classList.contains("active")) {
       document.documentElement.setAttribute('data-theme', 'dark');
-    }
-    else {
+      e.target.classList.add("active");
+    } else {
       document.documentElement.setAttribute('data-theme', 'light');
+      e.target.classList.remove("active");
     }
   }
-  return <div className="theme-switch-wrapper">
-    <label className="theme-switch" htmlFor="checkbox" onChange={switchTheme}>
-      <input type="checkbox" id="checkbox" />
-      <div className="slider round"></div>
-    </label>
-    <em>Enable Dark Mode!</em>
+  return <div id="dark-mode-toggle">
+    <button id="dark-mode-button" onClick={switchTheme}/>
   </div>;
 }
 
