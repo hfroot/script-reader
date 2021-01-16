@@ -53,15 +53,15 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="TextHeader">
+    <div id="App">
+      <div id="TextHeader">
         <h1>{text.title[state.lang]}</h1>
         <h2>{text.author[state.lang]}</h2>
       </div>
-      <div className="Configuration">
+      <div id="Configuration">
         <button onClick={toggleLanguage}>Change language to: {LanguageMap[state.altLang].display}</button>
       </div>
-      <div className="TextBody" style={{whiteSpace: "pre-wrap"}}>
+      <div id="TextBody" style={{whiteSpace: "pre-wrap"}}>
         {text.text.map((t, key) => {
           const displayText = t.text[state.lang];
           const altDisplayText = t.text[state.altLang];

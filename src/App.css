@@ -1,17 +1,9 @@
-@font-face {
-  font-family: "OpenDyslexic3";
-  src: local("OpenDyslexic3"),
-    url("./fonts/OpenDyslexic3-Regular.ttf") format("truetype");
-  font-weight: normal;
-}
-
-.App {
+#App {
   padding: 2em 5em;
-  font-family: OpenDyslexic3;
   width: 60%;
 }
 
-.TextBody p.highlighted {
+#TextBody p.highlighted {
   background-color: #aee;
 }
 
