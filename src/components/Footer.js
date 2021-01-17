@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
+// TODO: include wikisource and gutenberg
 function Footer() {
   return <footer>
     <p>

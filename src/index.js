@@ -4,12 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './fonts/OpenDyslexic3-Regular.ttf';
-import Header from './components/Header';
 import Footer from './components/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
     <App />
     <Footer />
   </React.StrictMode>,

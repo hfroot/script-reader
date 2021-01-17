@@ -41,6 +41,7 @@ function Text() {
           'character': line.character,
           'direction': line.direction,
           'marker': line.marker,
+          'id': line.marker ? idx : false,
           'text': {
             'fr': line.text,
             'en': englishLine.text
