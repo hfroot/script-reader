@@ -15,31 +15,20 @@ function App() {
     });
   };
   // TODO: check if this way of managing elements is accessible
-  let showAltLine = function(key) {
-    return (event) => {
-      // not convinced by the parent fallback
-      const target = event.target || event.srcElement;
-      const currentElement = target.localName === "span" ? target : (target.getElementsByClassName(state.lang)[0] || target.parentElement);
-      const pElement = currentElement.parentElement;
-      const altElement = pElement.getElementsByClassName(state.altLang)[0];
-      currentElement.style.display = "none";
-      altElement.style.display = "";
-    };
-  };
-  let resetLine = function(key) {
+  let toggleLineLanguage = function(key) {
     return (event) => {
       const target = event.target || event.srcElement;
-      const altElement = target.localName === "span" ? target : (target.getElementsByClassName(state.altLang)[0] || target.parentElement);
-      const parent = altElement.parentElement;
-      const currentElement = parent.getElementsByClassName(state.lang)[0];
-      currentElement.style.display = "";
-      altElement.style.display = "none";
+      const targetElement = target.localName === "span" ? target : (target.getElementsByClassName(state.lang)[0] || target.parentElement);
+      const container = targetElement.parentElement;
+      const requestedElement = container.getElementsByClassName("altLang")[0];
+      targetElement.classList.add("altLang");
+      requestedElement.classList.remove("altLang");
     };
   };
 
   const characters = text.characters[state.lang];
   const altCharacters = text.characters[state.altLang];
-  const selectedCharacter = "S"; // demo
+  const selectedCharacter = "hippolyte"; // demo
   let lastCharacter;
 
   function getCharacterName(charId, useAlt) {
@@ -64,19 +53,20 @@ function App() {
         {text.text.map((t, key) => {
           const displayText = t.text[state.lang];
           const altDisplayText = t.text[state.altLang];
+          // TODO: make these items keyboard accessible, maybe by wrapping them in buttons or links
           if (t.marker) {
             lastCharacter = null;
             return (
-              <h3 key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)}>
+              <h3 className="marker" key={key} onClick={toggleLineLanguage(key)}>
                 <span className={state.lang}>{displayText}</span>
-                <span className={state.altLang} style={{display:"none"}}>{altDisplayText}</span>
+                <span className={`${state.altLang} altLang`}>{altDisplayText}</span>
               </h3>
             );
           } else if (t.direction) {
             return (
-              <p key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)}>
+              <p className="direction" key={key} onClick={toggleLineLanguage(key)}>
                 <span className={state.lang}><i>{displayText}</i></span>
-                <span className={state.altLang} style={{display:"none"}}><i>{altDisplayText}</i></span>
+                <span className={`${state.altLang} altLang`}><i>{altDisplayText}</i></span>
               </p>
             );
           } else {
@@ -84,9 +74,9 @@ function App() {
             lastCharacter = t.character;
             const highlighted = t.character === selectedCharacter;
             return (
-              <p key={key} onMouseDown={showAltLine(key)} onMouseUp={resetLine(key)} className={highlighted ? "highlighted" : ""}>
+              <p key={key} className={`speech ${t.character} ${highlighted ? "highlighted" : ""}`} onClick={toggleLineLanguage(key)}>
                 <span className={state.lang}><b className={sameCharacter ? "same-character" : null}>{getCharacterName(t.character)}: </b>{displayText}</span>
-                <span className={state.altLang} style={{display:"none"}}><b className={sameCharacter ? "same-character" : null}>{getCharacterName(t.character, true)}: </b>{altDisplayText}</span>
+                <span className={`${state.altLang} altLang`}><b className={sameCharacter ? "same-character" : null}>{getCharacterName(t.character, true)}: </b>{altDisplayText}</span>
               </p>
             );
           }

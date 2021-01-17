@@ -1,6 +1,6 @@
 #App {
   padding: 3em 5em;
-  width: 60%;
+  max-width: 700px;
 }
 
 h1, h2 {
@@ -25,11 +25,21 @@ h1, h2 {
 }
 
 #TextBody p.highlighted {
-  background-color: #aee;
+  background-color: var(--bg-highlight);
 }
 
 b.same-character {
   display: none;
+}
+
+.speech > span, .direction > span, .marker > span {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.altLang {
+  display: none !important;
 }
 
 @media (max-width: 480px) {
