@@ -31,3 +31,22 @@ h1, h2 {
 b.same-character {
   display: none;
 }
+
+@media (max-width: 480px) {
+  #App {
+    padding: 3em 1em;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h1, h2, h3 {
+    margin: 0.5em 0em;
+  }
+}
