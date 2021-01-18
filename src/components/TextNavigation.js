@@ -22,7 +22,7 @@ function TextNavigation(props) {
   };
 
   let currentLevel1;
-  return <header>
+  return <div id="TextNavigation">
     <a href="#root">
       Top
     </a>
@@ -39,8 +39,7 @@ function TextNavigation(props) {
         );
       })
     }
-    <ToggleDarkMode />
-  </header>;
+  </div>;
 }
 
 export default TextNavigation;

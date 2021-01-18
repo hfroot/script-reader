@@ -1,0 +1,13 @@
+header {
+  background-color: var(--bg-color);
+  border-bottom: 2px solid #333;
+  font-size: 12px;
+  padding: 0.5em 1em;
+  width: calc(100% - 2em);
+}
+
+#dark-mode-button {
+  margin-right: 1em;
+  margin-left: auto;
+  display: block;
+}
