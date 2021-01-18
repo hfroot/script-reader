@@ -52,7 +52,7 @@ b.same-character {
   padding-top: 4em;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   #AppBody {
     padding: 10em 1em;
   }
