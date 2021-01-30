@@ -18,7 +18,19 @@ const LanguageMap = {
 function Text() {
   let combinedText = {};
   for (const key in FrenchText) {
-    if (key !== 'text' && Object.hasOwnProperty.call(FrenchText, key)) {
+    if (key === 'characters') {
+      // TODO: warn if keys are mismatched between translations
+      let combinedCharacters = {};
+      for (const charId in FrenchText[key]) {
+        combinedCharacters[charId] = {
+          name: {
+            'fr': FrenchText[key][charId].name,
+            'en': EnglishText[key][charId].name
+          }
+        }
+      }
+      combinedText[key] = combinedCharacters;
+    } else if (key !== 'text' && Object.hasOwnProperty.call(FrenchText, key)) {
       const element = FrenchText[key];
       combinedText[key] = {
         'fr': FrenchText[key],

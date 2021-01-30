@@ -27,18 +27,19 @@ function App() {
     };
   };
 
-  const characters = text.characters[state.lang];
-  const altCharacters = text.characters[state.altLang];
+  const characters = text.characters;
   const selectedCharacter = "hippolyte"; // demo
+  let charactersToSelect = [];
+  for (const id in characters) {
+    charactersToSelect.push({
+      id: id,
+      name: characters[id].name[state.lang]
+    });
+  };
   let lastCharacter;
 
-  function getCharacterName(charId, useAlt) {
-    let hasMoreInfo = !!characters[charId];
-    if (hasMoreInfo) {
-      return useAlt ? altCharacters[charId].name : characters[charId].name;
-    } else {
-      return charId;
-    }
+  function getCharacterName(charId, lang) {
+    return characters[charId]?.name[lang] || charId;
   }
 
   return (
@@ -51,6 +52,14 @@ function App() {
         </div>
         <div id="Configuration">
           <button onClick={toggleLanguage}>Change language to: {LanguageMap[state.altLang].display}</button>
+          <select>
+            <option value="">-- Plz select character --</option>
+            {charactersToSelect.map((character) => {
+              return (
+                <option value={character.id}>{character.name}</option>
+              );
+            })}
+          </select>
         </div>
         <div id="TextBody" style={{ whiteSpace: "pre-wrap" }}>
           {text.text.map((t, key) => {
@@ -78,8 +87,8 @@ function App() {
               const highlighted = t.character === selectedCharacter;
               return (
                 <p key={key} className={`speech ${t.character} ${highlighted ? "highlighted" : ""}`} onClick={toggleLineLanguage(key)}>
-                  <span className={state.lang}><b className={sameCharacter ? "same-character" : null}>{getCharacterName(t.character)}: </b>{displayText}</span>
-                  <span className={`${state.altLang} altLang`}><b className={sameCharacter ? "same-character" : null}>{getCharacterName(t.character, true)}: </b>{altDisplayText}</span>
+                  <span className={state.lang}><b className={sameCharacter ? "same-character" : null}>{getCharacterName(t.character, state.lang)}: </b>{displayText}</span>
+                  <span className={`${state.altLang} altLang`}><b className={sameCharacter ? "same-character" : null}>{getCharacterName(t.character, state.altLang)}: </b>{altDisplayText}</span>
                 </p>
               );
             }
