@@ -28,7 +28,6 @@ function App() {
   };
 
   const characters = text.characters;
-  const selectedCharacter = "hippolyte"; // demo
   let charactersToSelect = [];
   for (const id in characters) {
     charactersToSelect.push({
@@ -37,6 +36,20 @@ function App() {
     });
   };
   let lastCharacter;
+
+  function updateCharacterSelection (event) {
+    const target = event.target;
+    const selected = target.selectedOptions;
+    let selectedCharacters = [];
+    for (let idx = 0; idx < selected.length; idx++) {
+      selectedCharacters.push(selected[idx].value);
+    }
+    setState({
+      lang: state.lang,
+      altLang: state.altLang,
+      selectedCharacters: selectedCharacters
+    });
+  };
 
   function getCharacterName(charId, lang) {
     return characters[charId]?.name[lang] || charId;
@@ -51,12 +64,14 @@ function App() {
           <h2>{text.author[state.lang]}</h2>
         </div>
         <div id="Configuration">
-          <button onClick={toggleLanguage}>Change language to: {LanguageMap[state.altLang].display}</button>
-          <select>
-            <option value="">-- Plz select character --</option>
+          <button id="LanguageToggle" onClick={toggleLanguage}>Change language to: {LanguageMap[state.altLang].display}</button>
+          <br/>
+          <select id="CharacterSelect" multiple onChange={updateCharacterSelection}>
+            <option value="">-- Select characters for line highlighting --</option>
             {charactersToSelect.map((character) => {
+              // TODO: add option for highlighting directions too for narrators
               return (
-                <option value={character.id}>{character.name}</option>
+                <option value={character.id} key={character.id}>{character.name}</option>
               );
             })}
           </select>
@@ -84,7 +99,7 @@ function App() {
             } else {
               const sameCharacter = lastCharacter === t.character;
               lastCharacter = t.character;
-              const highlighted = t.character === selectedCharacter;
+              const highlighted = (state.selectedCharacters || []).indexOf(t.character) > -1;
               return (
                 <p key={key} className={`speech ${t.character} ${highlighted ? "highlighted" : ""}`} onClick={toggleLineLanguage(key)}>
                   <span className={state.lang}><b className={sameCharacter ? "same-character" : null}>{getCharacterName(t.character, state.lang)}: </b>{displayText}</span>
