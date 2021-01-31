@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.584da19d.chunk.css",
+    "main.js": "/static/js/main.5561b0a6.chunk.js",
+    "main.js.map": "/static/js/main.5561b0a6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ab1d2b5d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ab1d2b5d.js.map",
+    "static/js/2.edd33f39.chunk.js": "/static/js/2.edd33f39.chunk.js",
+    "static/js/2.edd33f39.chunk.js.map": "/static/js/2.edd33f39.chunk.js.map",
+    "static/js/3.5482b1b3.chunk.js": "/static/js/3.5482b1b3.chunk.js",
+    "static/js/3.5482b1b3.chunk.js.map": "/static/js/3.5482b1b3.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.584da19d.chunk.css.map": "/static/css/main.584da19d.chunk.css.map",
+    "static/js/2.edd33f39.chunk.js.LICENSE.txt": "/static/js/2.edd33f39.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/OpenDyslexic3-Regular.695571a7.ttf",
+    "static/media/ToggleDarkMode.css": "/static/media/light-bulb-on.bb63d37d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab1d2b5d.js",
+    "static/js/2.edd33f39.chunk.js",
+    "static/css/main.584da19d.chunk.css",
+    "static/js/main.5561b0a6.chunk.js"
+  ]
+}
