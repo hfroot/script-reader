@@ -21,6 +21,7 @@ function TextNavigation(props) {
     }
   };
 
+  // TODO: add "jump to next highlighted line" button
   let currentLevel1;
   return <div id="TextNavigation">
     <a href="#root">
