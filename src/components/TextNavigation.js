@@ -1,6 +1,5 @@
 import React from "react";
 import './TextNavigation.css';
-import ToggleDarkMode from './ToggleDarkMode'
 
 function TextNavigation(props) {
   const text = props.text;

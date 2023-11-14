@@ -31,7 +31,6 @@ function Text() {
       }
       combinedText[key] = combinedCharacters;
     } else if (key !== 'text' && Object.hasOwnProperty.call(FrenchText, key)) {
-      const element = FrenchText[key];
       combinedText[key] = {
         'fr': FrenchText[key],
         'en': EnglishText[key]
