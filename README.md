@@ -15,6 +15,13 @@ cd ../../
 npm run start
 ```
 
+To deploy, make sure you have surge installed globally:
+
+```
+npm install --global surge
+npm run deploy
+```
+
 ## Project structure
 
 Translations for texts are saved in separate files, with the file name as `<ISO 639-1 language code>.md`, in a folder for the play.
