@@ -5,6 +5,16 @@ A web app to facilitate language learning through reading scripts with various f
 * toggling the language/alternative language
 * peeking at a line in the alternative language
 
+## Getting started
+
+```
+npm install
+cd src/scripts
+python html-to-json.py
+cd ../../
+npm run start
+```
+
 ## Project structure
 
 Translations for texts are saved in separate files, with the file name as `<ISO 639-1 language code>.md`, in a folder for the play.
